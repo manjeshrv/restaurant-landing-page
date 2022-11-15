@@ -1,0 +1,63 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: inherit;
+    border-radius: 1rem;
+    padding: 1.6rem 1.4rem;
+    border: none;
+    color: $color-white;
+  }
+
+  &--primary {
+    &,
+    &:link,
+    &:visited {
+      background-color: $color-primary;
+    }
+  }
+
+  &--dark {
+    &,
+    &:link,
+    &:visited {
+      background-color: $color-dark;
+    }
+  }
+
+  &--slant-right {
+    &,
+    &:link,
+    &:visited {
+      transform: skewX(-20deg);
+      padding-left: 3rem;
+      padding-right: 3rem;
+      border-top-right-radius: 1.6rem;
+      border-bottom-left-radius: 1.6rem;
+
+      & > * {
+        display: inline-block;
+        transform: skewX(20deg);
+      }
+    }
+  }
+
+  &--slant-left {
+    &,
+    &:link,
+    &:visited {
+      transform: skewX(20deg);
+      padding-left: 3rem;
+      padding-right: 3rem;
+      border-top-left-radius: 1.6rem;
+      border-bottom-right-radius: 1.6rem;
+
+      & > * {
+        display: inline-block;
+        transform: skewX(-20deg);
+      }
+    }
+  }
+}
